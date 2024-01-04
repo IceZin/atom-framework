@@ -1,0 +1,5 @@
+.venv
+.vscode
+atom.egg-info
+build
+dist

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atom"
+version = "0.0.1"
+dependencies = [
+    'argon2-cffi',
+    'psycopg2',
+    'sqlalchemy'
+]
