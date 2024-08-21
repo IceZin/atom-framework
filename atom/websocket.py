@@ -17,7 +17,7 @@ class WebSocket:
             print("Pong was not expected")
 
     def ping(self):
-        
+        pass
 
     def read_headers(self):
         first_byte = self.read()

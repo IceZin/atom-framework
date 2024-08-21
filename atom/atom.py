@@ -29,8 +29,10 @@ Content-Length: 148
 
 class Atom:
     def __init__(self, app):
-        self.server = pywsgi.WSGIServer(("127.0.0.1", 5000), application=app, handler_class=WebSocketHandler)
+        self.server = pywsgi.WSGIServer(("127.0.0.1", 5002), application=app, handler_class=WebSocketHandler)
         self.server.serve_forever()
+
+        print("Server started on port 5002")
 
     def apply(view):
         def decorator(func):
